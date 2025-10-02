@@ -1,0 +1,222 @@
+[
+  {
+    "id": "p001",
+    "name": "PS5 Slim - Edición Negra",
+    "description": "Consola nueva, 1TB, soporte 4K",
+    "price": 59999.99,
+    "category": "consolas",
+    "image": "assets/images/ps5black.jpg",
+    "stock": 12,
+    "features": ["4K", "1TB SSD", "Control inalámbrico"],
+    "rating": 4.7
+  },
+  {
+    "id": "p002",
+    "name": "Xbox Series X",
+    "description": "1TB, 4K UHD, ultra silenciosa",
+    "price": 57999.99,
+    "category": "consolas",
+    "image": "assets/images/xboxseries.jpg",
+    "stock": 10,
+    "features": ["4K UHD", "1TB SSD", "Game Pass"],
+    "rating": 4.6
+  },
+  {
+    "id": "p003",
+    "name": "Nintendo Switch OLED",
+    "description": "Edición OLED, Joy-Con, 64GB",
+    "price": 42999.99,
+    "category": "consolas",
+    "image": "assets/images/nintendoswitch.jpg",
+    "stock": 8,
+    "features": ["OLED", "64GB", "Portátil"],
+    "rating": 4.8
+  },
+  {
+    "id": "p004",
+    "name": "Logitech G Pro X Superlight",
+    "description": "Mouse inalámbrico, ultra liviano",
+    "price": 18999.99,
+    "category": "periféricos",
+    "image": "assets/images/logitech.jpg",
+    "stock": 15,
+    "features": ["Wireless", "Ultra liviano", "RGB"],
+    "rating": 4.9
+  },
+  {
+    "id": "p005",
+    "name": "Teclado HyperX Alloy Origins",
+    "description": "Mecánico, RGB, switches Red",
+    "price": 15999.99,
+    "category": "periféricos",
+    "image": "assets/images/hyperx.jpg",
+    "stock": 20,
+    "features": ["Mecánico", "RGB", "Switches Red"],
+    "rating": 4.7
+  },
+  {
+    "id": "p006",
+    "name": "Auriculares Razer Kraken V3",
+    "description": "Sonido envolvente, micrófono retráctil",
+    "price": 13999.99,
+    "category": "periféricos",
+    "image": "assets/images/auriculares.jpg",
+    "stock": 18,
+    "features": ["7.1", "Mic retráctil", "RGB"],
+    "rating": 4.6
+  },
+  {
+    "id": "p007",
+    "name": "God of War Ragnarök PS5",
+    "description": "Juego físico, acción y aventura",
+    "price": 9999.99,
+    "category": "juegos",
+    "image": "assets/images/godofwar.jpg",
+    "stock": 25,
+    "features": ["Acción", "Aventura", "PS5"],
+    "rating": 4.9
+  },
+  {
+    "id": "p008",
+    "name": "FIFA 25 Xbox Series X",
+    "description": "Fútbol, multijugador online",
+    "price": 8999.99,
+    "category": "juegos",
+    "image": "assets/images/fifa25.jpg",
+    "stock": 22,
+    "features": ["Fútbol", "Online", "Xbox"],
+    "rating": 4.5
+  },
+  {
+    "id": "p009",
+    "name": "The Legend of Zelda: TOTK",
+    "description": "Aventura épica, mundo abierto",
+    "price": 10999.99,
+    "category": "juegos",
+    "image": "assets/images/tloz.jpg",
+    "stock": 17,
+    "features": ["Aventura", "Switch", "Open World"],
+    "rating": 4.8
+  },
+  {
+    "id": "p010",
+    "name": "Joystick DualSense PS5",
+    "description": "Control inalámbrico, vibración háptica",
+    "price": 11999.99,
+    "category": "accesorios",
+    "image": "assets/images/joystickps5.jpg",
+    "stock": 30,
+    "features": ["Wireless", "Haptic", "PS5"],
+    "rating": 4.7
+  },
+  {
+    "id": "p011",
+    "name": "Cámara PlayStation HD",
+    "description": "Streaming, 1080p, PS5",
+    "price": 8999.99,
+    "category": "accesorios",
+    "image": "assets/images/camaraps.jpg",
+    "stock": 10,
+    "features": ["1080p", "Streaming", "PS5"],
+    "rating": 4.4
+  },
+  {
+    "id": "p012",
+    "name": "Base Cargadora Xbox",
+    "description": "Carga rápida, 2 controles",
+    "price": 6999.99,
+    "category": "accesorios",
+    "image": "assets/images/basexbox.jpg",
+    "stock": 14,
+    "features": ["Carga rápida", "2 controles", "Xbox"],
+    "rating": 4.3
+  },
+  {
+    "id": "p013",
+    "name": "Placa de Video RTX 4070",
+    "description": "12GB GDDR6X, Ray Tracing",
+    "price": 299999.99,
+    "category": "hardware",
+    "image": "assets/images/placavideo.jpg",
+    "stock": 5,
+    "features": ["12GB", "Ray Tracing", "NVIDIA"],
+    "rating": 4.9
+  },
+  {
+    "id": "p014",
+    "name": "Procesador AMD Ryzen 7 5800X",
+    "description": "8 núcleos, 16 hilos, 4.7GHz",
+    "price": 124999.99,
+    "category": "hardware",
+    "image": "assets/images/ryzen.jpg",
+    "stock": 7,
+    "features": ["8 núcleos", "4.7GHz", "AM4"],
+    "rating": 4.8
+  },
+  {
+    "id": "p015",
+    "name": "Motherboard ASUS TUF B550M",
+    "description": "Micro ATX, DDR4, AM4",
+    "price": 74999.99,
+    "category": "hardware",
+    "image": "assets/images/asus.jpg",
+    "stock": 9,
+    "features": ["DDR4", "AM4", "Micro ATX"],
+    "rating": 4.6
+  },
+  {
+    "id": "p016",
+    "name": "SSD Kingston NV2 1TB",
+    "description": "NVMe PCIe 4.0, 3500MB/s",
+    "price": 39999.99,
+    "category": "hardware",
+    "image": "assets/images/kingstonnv2.jpg",
+    "stock": 16,
+    "features": ["1TB", "NVMe", "PCIe 4.0"],
+    "rating": 4.7
+  },
+  {
+    "id": "p017",
+    "name": "Silla Gamer Redragon",
+    "description": "Ergonómica, reclinable, soporte lumbar",
+    "price": 49999.99,
+    "category": "accesorios",
+    "image": "assets/images/sillagamer.jpg",
+    "stock": 11,
+    "features": ["Ergonómica", "Reclinable", "Lumbar"],
+    "rating": 4.5
+  },
+  {
+    "id": "p018",
+    "name": "Monitor Samsung Odyssey G5",
+    "description": "32 pulgadas, 165Hz, 1ms, Curvo",
+    "price": 139999.99,
+    "category": "hardware",
+    "image": "assets/images/monitorsamsung.jpg",
+    "stock": 6,
+    "features": ["32" , "165Hz", "Curvo"],
+    "rating": 4.8
+  },
+  {
+    "id": "p019",
+    "name": "Mousepad XL RGB",
+    "description": "80x30cm, base antideslizante, RGB",
+    "price": 4999.99,
+    "category": "accesorios",
+    "image": "assets/images/mousepad.jpg",
+    "stock": 25,
+    "features": ["XL", "RGB", "Antideslizante"],
+    "rating": 4.4
+  },
+  {
+    "id": "p020",
+    "name": "Far Cry 7 PS5",
+    "description": "Acción, mundo abierto, multijugador",
+    "price": 10999.99,
+    "category": "juegos",
+    "image": "assets/images/farcry7.jpg",
+    "stock": 20,
+    "features": ["Acción", "Open World", "PS5"],
+    "rating": 4.6
+  }
+]

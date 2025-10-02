@@ -1,0 +1,117 @@
+body {
+  background: #0b0f1a;
+  color: #f1f5f9;
+  font-family: 'Poppins', 'Orbitron', Arial, sans-serif;
+}
+
+.btn-cyan {
+  background: #06b6d4;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+}
+.btn-cyan:hover {
+  background: #00F5D4;
+  color: #0b0f1a;
+}
+.link-cyan {
+  color: #00F5D4;
+}
+.link-cyan:hover {
+  color: #06b6d4;
+}
+.card {
+  background: #13182b;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px #0003;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 4px 24px #00F5D455;
+}
+.card-img-top {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  height: 180px;
+}
+#main-header, #main-footer {
+  background: #13182b;
+  border-bottom: 2px solid #7c3aed33;
+}
+#main-footer {
+  border-top: 2px solid #7c3aed33;
+  border-bottom: none;
+  color: #b0b6c1;
+  font-size: 0.95rem;
+}
+#hero-section {
+  background: linear-gradient(90deg, #0b0f1a 60%, #7c3aed22 100%);
+  padding: 2.5rem 0 1.5rem 0;
+  text-align: center;
+}
+#hero-section h1 {
+  font-family: 'Orbitron', Arial, sans-serif;
+  color: #00F5D4;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#hero-section h2 {
+  color: #7c3aed;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+#hero-section .btn {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #7c3aed;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.carousel-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+}
+
+
+#cart-sidebar .offcanvas {
+  background: #13182b;
+  color: #fff;
+}
+.toast {
+  background: #13182b;
+  color: #fff;
+  border-left: 4px solid #06b6d4;
+}
+.form-label {
+  color: #00F5D4;
+}
+.form-control, .form-select {
+  background: #181e2e;
+  color: #fff;
+  border: 1px solid #7c3aed55;
+}
+.form-control:focus, .form-select:focus {
+  border-color: #00F5D4;
+  box-shadow: 0 0 0 0.2rem #00F5D455;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #181e2e;
+}
+::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 4px;
+}
