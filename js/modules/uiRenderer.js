@@ -268,7 +268,7 @@ export function renderCartSidebar(cart) {
           <button class="btn btn-sm btn-outline-cyan" data-action="dec" data-id="${item.productId}">-</button>
           <input type="number" class="form-control form-control-sm text-center" style="width:50px;" min="1" max="${prod.stock}" value="${item.qty}" data-action="qty" data-id="${item.productId}">
           <button class="btn btn-sm btn-outline-cyan" data-action="inc" data-id="${item.productId}">+</button>
-          <button class="btn btn-sm btn-outline-danger ms-2" data-action="remove" data-id="${item.productId}"><i class="bi bi-trash"></i></button>
+          <button class="btn btn-sm btn-danger ms-2" data-action="remove" data-id="${item.productId}" title="Eliminar producto"><i class="bi bi-x-circle-fill"></i> Quitar</button>
         </div>
       </li>`;
     }).join('') + '</ul>';

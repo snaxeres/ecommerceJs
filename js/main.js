@@ -18,7 +18,8 @@ import {
   addItem,
   updateQty,
   removeItem,
-  clearCart
+  clearCart,
+  calculateTotals
 } from './modules/cartManager.js';
 import { debounce } from './modules/utils.js';
 
@@ -127,7 +128,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
-  // Checkout simulado
+  // Checkout a WhatsApp
   document.body.addEventListener('click', e => {
     if (e.target && e.target.id === 'checkout-btn') {
       const offcanvas = document.getElementById('cartOffcanvas');
@@ -150,7 +151,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             <label for="checkout-address" class="form-label">Dirección</label>
             <input type="text" class="form-control" id="checkout-address" required>
           </div>
-          <button type="submit" class="btn btn-cyan w-100">Confirmar compra</button>
+          <button type="submit" class="btn btn-cyan w-100">Enviar a WhatsApp</button>
         </form>
       </div>`;
     }
@@ -165,11 +166,45 @@ window.addEventListener('DOMContentLoaded', async () => {
         renderToasts('Todos los campos son obligatorios', 'danger');
         return;
       }
+      
+      // Generar mensaje de WhatsApp
+      const cart = getCart();
+      const { products } = getProducts({ perPage: 1000 });
+      const { subtotal, impuestos, total } = calculateTotals(cart, products);
+      
+      let mensaje = `*PEDIDO DE COMPRA*%0A%0A`;
+      mensaje += `*Cliente:* ${name}%0A`;
+      mensaje += `*Email:* ${email}%0A`;
+      mensaje += `*Dirección:* ${address}%0A`;
+      mensaje += `%0A*PRODUCTOS:*%0A`;
+      
+      cart.forEach(item => {
+        const prod = products.find(p => p.id === item.productId);
+        if (prod) {
+          const precioUnitario = prod.price;
+          const precioTotal = precioUnitario * item.qty;
+          mensaje += `• ${prod.name}%0A`;
+          mensaje += `  Cantidad: ${item.qty} x ${precioUnitario.toLocaleString('es-AR', { style: 'currency', currency: 'ARS' })} = ${precioTotal.toLocaleString('es-AR', { style: 'currency', currency: 'ARS' })}%0A`;
+        }
+      });
+      
+      mensaje += `%0A*TOTALES:*%0A`;
+      mensaje += `Subtotal: ${subtotal.toLocaleString('es-AR', { style: 'currency', currency: 'ARS' })}%0A`;
+      mensaje += `Impuestos (21%): ${impuestos.toLocaleString('es-AR', { style: 'currency', currency: 'ARS' })}%0A`;
+      mensaje += `*TOTAL: ${total.toLocaleString('es-AR', { style: 'currency', currency: 'ARS' })}*`;
+      
+      // Enviar a WhatsApp
+      const whatsappUrl = `https://wa.me/5491568908235?text=${mensaje}`;
+      window.open(whatsappUrl, '_blank');
+      
+      // Limpiar carrito y mostrar confirmación
       clearCart();
-      renderToasts('¡Compra realizada con éxito!', 'success');
+      renderToasts('¡Pedido enviado a WhatsApp!', 'success');
+      renderHeaderCartCount(0);
       setTimeout(() => {
         const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(document.getElementById('cartOffcanvas'));
         bsOffcanvas.hide();
+        updateCartSidebar();
       }, 1200);
     }
   });

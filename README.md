@@ -57,4 +57,4 @@ ecommerce-gaming/
 - **Imágenes de productos**: usar las rutas indicadas en `products.json` (pueden ser reemplazadas por imágenes reales si se desea).
 
 ## Autor
-- Generado automáticamente por GitHub Copilot siguiendo especificaciones estrictas.
+- Enrique Alegre
